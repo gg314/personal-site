@@ -37,7 +37,7 @@ textarea {
 }
 
 h3 {
-  color: #7994aa;
+  color: #a7bed1;
   font-size: 2.0rem;
   letter-spacing: .5pt;
   margin: 0;
@@ -225,9 +225,8 @@ h2 {
 }
 
 [data-tooltip]::after {
-  content: attr(tooltip);
+  content: attr(data-tooltip);
   text-align: center;
-
   min-width: 2.5em;
   max-width: 30em;
   white-space: nowrap;
