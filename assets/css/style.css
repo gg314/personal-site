@@ -114,6 +114,13 @@ h3 a:hover {
   width: 311px;
 }
 
+.fiadb-demo {
+  background: url('../img/fiadb-demo.png') no-repeat center center;
+  background-size: contain;
+  height: 260px;
+  width: 311px;
+}
+
 .container {
   margin: 0;
 }
