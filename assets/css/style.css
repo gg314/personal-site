@@ -121,6 +121,13 @@ h3 a:hover {
   width: 311px;
 }
 
+.thesis-img {
+  background: url('../img/bloch.png') no-repeat center center;
+  background-size: contain;
+  height: 260px;
+  width: 311px;
+}
+
 .container {
   margin: 0;
 }
