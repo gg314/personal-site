@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&display=swap');
 
+@font-face {
+	font-family: "FontAwesome";
+	font-weight: normal;
+	font-style: normal;
+	src:
+		url("../fonts/fa-solid-900.woff2") format("woff2"),
+		url("../fonts/fa-solid-900.woff") format("woff");
+}
+
+@font-face {
+	font-family: "FontAwesomeBrands";
+	font-weight: normal;
+	font-style: normal;
+	src:
+  url("../fonts/fa-brands-400.woff2") format("woff2"),
+  url("../fonts/fa-brands-400.woff") format("woff");
+}
 
 body {
   margin: 0;
@@ -156,6 +173,10 @@ h3 a:hover {
   align-items: center;
 }
 
+.header__links > a {
+  margin-right: 0.75rem;
+}
+
 .header h1,
 .header h2 {
   color: #fff;
@@ -187,31 +208,37 @@ h2 {
   background: #f6f8fb;
 }
 
-.icon {
-  height: 50px;
-  width: 50px;
-  display: block;
-  background-color: #fff;
-  padding: 0 !important;
-  transition: .2s ease-in-out background-color, .1s ease-in-out mask-size;
-  mask-position: center center;
-  mask-repeat: no-repeat;
-  mask-size: 36px 36px;
+.icon::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 32px;
+  color: #fff;
+  font-family: "FontAwesome";
+  transition: .2s ease-in-out color;
 }
 
-.icon:hover {
-  /* background-position: 0 0% !important; */
-  background-color: #fdd99a;
-  /* mask-size: 40px 40px; */
+.icon--github::after {
+  font-family: "FontAwesomeBrands";
+  content: '\f09b';
 }
 
-.icon--github {
-  mask-image: url('../../assets/img/github.png');
+.icon--envelope::after {
+  content: '\f0e0';
 }
 
-.icon--contact {
-  mask-image: url('../../assets/img/contact.png');
+.icon--cv::after {
+  content: '\f2c2';
 }
+
+
+
+.icon:hover::after {
+  color: #fdd99a;
+}
+
 
 /********** Tooltips ***********/
 /* START TOOLTIP STYLES */
