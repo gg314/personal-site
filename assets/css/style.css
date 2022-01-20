@@ -198,6 +198,7 @@ h2 {
 
 .header a {
   margin-left: 0.5rem;
+  font-weight: unset;
 }
 
 .section {
@@ -230,10 +231,8 @@ h2 {
 }
 
 .icon--cv::after {
-  content: '\f2c2';
+  content: '\f2bb';
 }
-
-
 
 .icon:hover::after {
   color: #fdd99a;
